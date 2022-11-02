@@ -1,4 +1,4 @@
-# minecraft-server-backup
+# minecraft-server-control
 名前で察してね
 ## これは何ですか<br>詳細を説明します
 真面目に書くと、DiscordからMinecraftサーバーを管理できるものだったと思います。<br>
