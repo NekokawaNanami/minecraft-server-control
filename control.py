@@ -152,8 +152,4 @@ async def backups(interaction: discord.Interaction):
         embed = discord.Embed(title="権限がありません",description="この操作にはFriendsロールが必要です", color=0xff0000)
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
-<<<<<<< HEAD
-client.run("Token")
-=======
 client.run(Token)
->>>>>>> 80bbe5d (main)
