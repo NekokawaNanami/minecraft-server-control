@@ -1,8 +1,12 @@
 import discord
 import subprocess
 import datetime
+import os
+from dotenv import load_dotenv
 from discord import app_commands
+load_dotenv()
 
+Token = os.getenv('Token')
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)
 tree = app_commands.CommandTree(client)
@@ -148,4 +152,8 @@ async def backups(interaction: discord.Interaction):
         embed = discord.Embed(title="権限がありません",description="この操作にはFriendsロールが必要です", color=0xff0000)
         await interaction.response.send_message(embed=embed, ephemeral=True)
 
+<<<<<<< HEAD
 client.run("Token")
+=======
+client.run(Token)
+>>>>>>> 80bbe5d (main)
